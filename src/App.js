@@ -7,6 +7,12 @@ let defaultStyle = {
   color: textColor
 }
 
+let fakeServerData = {
+  user: {
+    name: "Daniel"
+  }
+}
+
 
 class Agregate extends Component{
   render() {
@@ -55,7 +61,7 @@ class App extends Component {
     let name = "Daniel";
     return (
       <div className="App">
-      <h1 style = {{...defaultStyle, 'font-size': '54px'}}>Title</h1>
+      <h1 style = {{...defaultStyle, 'font-size': '54px'}}>{fakeServerData.user.name}'s playlist</h1>
       <Agregate/>
       <Agregate/>
       <Filter/>
